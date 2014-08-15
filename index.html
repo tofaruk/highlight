@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Highlight words</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+        <script src="highlight.js"></script>
+    </head>
+    <body>
+        <h2>Highlight words</h2>
+        <a href="#">Example link</a>
+        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+    </body>
+    <style type="text/css">
+        .match{color:yellow;}
+        .match2{color:red;}
+    </style>
+    <script type="text/javascript">
+        $(document).ready(function() {
+            var key = '1500 1960';
+            $("a").light({class: 'match2', key: 'example'});
+            $("p").light({key: key});
+
+        });
+
+    </script>
+</html>
