@@ -5,6 +5,11 @@ Highlight match words  from DOM
 
         <script src="highlight.js"></script>
 
+        <style type="text/css">
+                .match{color:yellow;}
+                .match2{color:red;}
+        </style>
+
 
         <script type="text/javascript">
                 $(document).ready(function() {
