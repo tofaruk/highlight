@@ -3,6 +3,8 @@ highlight
 
 Highlight match words  from DOM
 
+        <script src="highlight.js"></script>
+
 
         <script type="text/javascript">
                 $(document).ready(function() {
